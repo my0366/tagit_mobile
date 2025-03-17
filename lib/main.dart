@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_template/app/app.dart';
-import 'package:flutter_template/shared/utili/permission_util.dart';
+import 'package:tagit_mobile/app/app.dart';
+import 'package:tagit_mobile/shared/utili/permission_util.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 void main() async {

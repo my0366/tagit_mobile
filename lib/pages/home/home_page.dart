@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_template/pages/home/home_event.dart';
-import 'package:flutter_template/pages/home/home_state.dart';
+import 'package:tagit_mobile/pages/home/home_event.dart';
+import 'package:tagit_mobile/pages/home/home_state.dart';
 import 'package:gap/gap.dart';
 
 class HomePage extends ConsumerWidget with HomeState, HomeEvent {

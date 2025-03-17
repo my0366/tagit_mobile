@@ -1,5 +1,5 @@
-import 'package:flutter_template/features/count/count_state.dart';
-import 'package:flutter_template/shared/data/remote/count_repository.dart';
+import 'package:tagit_mobile/features/count/count_state.dart';
+import 'package:tagit_mobile/shared/data/remote/count_repository.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'count_provider.g.dart';

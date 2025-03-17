@@ -1,4 +1,4 @@
-import 'package:flutter_template/shared/data/session_interceptor.dart';
+import 'package:tagit_mobile/shared/data/session_interceptor.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';

@@ -1,4 +1,4 @@
-import 'package:flutter_template/shared/data/local/constant.dart';
+import 'package:tagit_mobile/shared/data/local/constant.dart';
 import 'package:dio/dio.dart';
 
 enum HttpMethod { get, post, patch, put, delete }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_template/app/routes.dart';
+import 'package:tagit_mobile/app/routes.dart';
 
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});
