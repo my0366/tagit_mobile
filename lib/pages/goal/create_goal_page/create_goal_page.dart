@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
-import 'package:shadcn_ui/shadcn_ui.dart';
 import 'package:tagit_mobile/features/goal/create_goal/create_goal_ui.dart';
 import 'package:tagit_mobile/shared/utili/colors.dart';
 import 'package:tagit_mobile/shared/utili/theme_util.dart';

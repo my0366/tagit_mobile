@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:tagit_mobile/shared/data/local/session_storage.dart';
 import 'package:tagit_mobile/shared/utili/dev_log.dart';
 import 'package:dio/dio.dart';
@@ -5,8 +6,8 @@ import 'package:dio/dio.dart';
 class SessionInterceptor extends Interceptor {
   @override
   void onResponse(Response response, ResponseInterceptorHandler handler) {
-    Log.d("SessionInterceptor onRequest >> ${response.requestOptions.uri}");
-    super.onResponse(response, handler);
+    Log.d("SessionInterceptor onResponse >> ${response.statusCode}");
+    return super.onResponse(response, handler);
   }
 
   @override
@@ -18,6 +19,6 @@ class SessionInterceptor extends Interceptor {
 
   @override
   void onError(DioException err, ErrorInterceptorHandler handler) async {
-    //:Todo implement 401 Error
+    Log.e(err, err.stackTrace);
   }
 }

@@ -1,29 +1,29 @@
+import 'package:tagit_mobile/entities/goal/create_goal_dto.dart';
 import 'package:tagit_mobile/shared/data/dio_instance.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:tagit_mobile/shared/data/remote/dio_client.dart';
 
 part 'count_repository.g.dart';
 
 @Riverpod(keepAlive: true)
-CountRepository testRepository(Ref ref) {
+GoalsRepository goalsRepository(Ref ref) {
   final dio = ref.watch(dioProvider);
-  return CountRepository(dio: dio);
+  return GoalsRepository(dio: dio);
 }
 
-class CountRepository {
+class GoalsRepository {
   final Dio dio;
 
-  CountRepository({required this.dio});
+  GoalsRepository({required this.dio});
 
-  /// 예제에서는 1을 반환하도록 합니다.
-  Future<dynamic> getCounts() async {
-    /// 실제 API 호출시 사용 (예시)
-    // return DioClient.request(
-    //   dio: dio,
-    //   method: HttpMethod.get,
-    //   path: "/post",
-    // );
-    return Future.delayed(Duration(seconds: 1)).then((value) => 1);
+  Future<dynamic> postCreateGoal(CreateGoalDto createGoalDto) async {
+    return DioClient.request(
+      dio: dio,
+      method: HttpMethod.post,
+      path: "/goals",
+      body: createGoalDto.toJson(),
+    );
   }
 }

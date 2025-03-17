@@ -1,26 +1,27 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'count_provider.dart';
+part of 'create_goal_provider.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$countNotifierHash() => r'7cde1b896d49751873e9ae108892a2e3c39a1e28';
+String _$createGoalNotifierHash() =>
+    r'51e759daa0e60d72bf478fb56dc913b8de57c218';
 
-/// See also [CountNotifier].
-@ProviderFor(CountNotifier)
-final countNotifierProvider =
-    AutoDisposeNotifierProvider<CountNotifier, CountState>.internal(
-  CountNotifier.new,
-  name: r'countNotifierProvider',
+/// See also [CreateGoalNotifier].
+@ProviderFor(CreateGoalNotifier)
+final createGoalNotifierProvider =
+    AutoDisposeNotifierProvider<CreateGoalNotifier, CreateGoalState>.internal(
+  CreateGoalNotifier.new,
+  name: r'createGoalNotifierProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$countNotifierHash,
+      : _$createGoalNotifierHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$CountNotifier = AutoDisposeNotifier<CountState>;
+typedef _$CreateGoalNotifier = AutoDisposeNotifier<CreateGoalState>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
