@@ -19,6 +19,7 @@ dependencies:
   # UI
   cupertino_icons: ^1.0.8
   gap: ^3.0.1
+  shadcn_ui: ^0.22.5
 
   # Utility
   go_router: ^14.8.0
