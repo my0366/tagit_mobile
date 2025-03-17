@@ -14,9 +14,12 @@ class TagItApp extends ConsumerWidget {
       themeMode: ref.watch(appProvider),
       darkTheme: ShadThemeData(
         brightness: Brightness.dark,
-        colorScheme: ShadColorScheme.fromName('orange', brightness: Brightness.dark),
+        colorScheme: ShadColorScheme.fromName('green', brightness: Brightness.dark),
       ),
-      theme: ShadThemeData(brightness: Brightness.dark, colorScheme: ShadColorScheme.fromName('orange')),
+      theme: ShadThemeData(
+        brightness: Brightness.dark,
+        colorScheme: ShadColorScheme.fromName('green'),
+      ),
       appBuilder: (context, theme) {
         return MaterialApp.router(
           routerConfig: router,
