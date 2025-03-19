@@ -3,8 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
-import 'package:tagit_mobile/pages/goal/goal_page.dart';
-import 'package:tagit_mobile/pages/tag/tag_page.dart';
+import 'package:tagit_mobile/features/goal/goal_ui.dart';
+import 'package:tagit_mobile/features/tag/tag_ui.dart';
 import 'package:tagit_mobile/shared/utili/colors.dart';
 import 'package:tagit_mobile/shared/utili/theme_util.dart';
 
@@ -18,8 +18,8 @@ class HomePage extends ConsumerStatefulWidget {
 class _HomePageState extends ConsumerState<HomePage> {
   int currentIndex = 0;
   final List<Widget> pages = [
-    GoalPage(),
-    TagPage(),
+    GoalUi(),
+    TagUi(),
   ];
 
   void onChangeIndex(int index) {
@@ -33,6 +33,7 @@ class _HomePageState extends ConsumerState<HomePage> {
     return Scaffold(
       backgroundColor: ColorExtension.backgroundColor,
       appBar: AppBar(
+        forceMaterialTransparency: true,
         backgroundColor: ColorExtension.backgroundColor,
         centerTitle: false,
         title: Text(currentIndex == 0 ? "목표" : "태그", style: getShadTextTheme(context).h3),
