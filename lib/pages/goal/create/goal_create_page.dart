@@ -5,14 +5,14 @@ import 'package:tagit_mobile/features/goal/create_goal/create_goal_ui.dart';
 import 'package:tagit_mobile/shared/utili/colors.dart';
 import 'package:tagit_mobile/shared/utili/theme_util.dart';
 
-class CreateGoalPage extends ConsumerStatefulWidget {
-  const CreateGoalPage({super.key});
+class GoalCreatePage extends ConsumerStatefulWidget {
+  const GoalCreatePage({super.key});
 
   @override
   ConsumerState createState() => _CreateGoalPageState();
 }
 
-class _CreateGoalPageState extends ConsumerState<CreateGoalPage> {
+class _CreateGoalPageState extends ConsumerState<GoalCreatePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
