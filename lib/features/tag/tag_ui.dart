@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:go_router/go_router.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 import 'package:tagit_mobile/shared/utili/theme_util.dart';
 
@@ -63,7 +64,7 @@ class _TagUiState extends ConsumerState<TagUi> {
   Widget _buildTagItem() {
     return InkWell(
       onTap: () {
-        print("called");
+        context.push("/tag/2");
       },
       child: Slidable(
         endActionPane: ActionPane(
